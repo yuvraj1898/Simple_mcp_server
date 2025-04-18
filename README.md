@@ -1,4 +1,3 @@
-# Simple_mcp_server
 # 📚 Simple MCP Info Server
 
 A FastMCP-powered microservice that provides search tools for **Wikipedia** and **Arxiv** using the LangChain Community utilities.
