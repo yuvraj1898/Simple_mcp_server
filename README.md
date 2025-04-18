@@ -9,7 +9,7 @@ This project demonstrates how to create and run an **MCP (Modular Capability Pro
 
 ## 🚀 What is MCP?
 
-**Modular Capability Protocol (MCP)** is a protocol that allows language models like Claude to communicate with external tools (called "capabilities") in a standardized way. These capabilities can be:
+**Model Control Protocol (MCP)** is a protocol that allows language models like Claude to communicate with external tools (called "capabilities") in a standardized way. These capabilities can be:
 
 - Functions written in any language
 - Web APIs
