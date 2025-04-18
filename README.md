@@ -3,7 +3,30 @@
 A FastMCP-powered microservice that provides search tools for **Wikipedia** and **Arxiv** using the LangChain Community utilities.
 
 ---
+This project demonstrates how to create and run an **MCP (Modular Capability Protocol)** server using [`FastMCP`](https://github.com/anthropics/mcp). It provides simple tools that Claude Desktop can use to **search Wikipedia** and **fetch academic papers from Arxiv**.
 
+---
+
+## 🚀 What is MCP?
+
+**Modular Capability Protocol (MCP)** is a protocol that allows language models like Claude to communicate with external tools (called "capabilities") in a standardized way. These capabilities can be:
+
+- Functions written in any language
+- Web APIs
+- Local scripts
+
+Using MCP, Claude can **invoke your tools**, get the response, and continue the conversation.
+
+---
+
+## 📚 What This Project Does
+
+This Info Server exposes two tools via MCP:
+
+1. `get_info(searchterm: str)` — Searches **Wikipedia** for short summaries
+2. `get_research_paper(searchterm: str)` — Searches **Arxiv** for academic paper metadata
+
+---
 ## ⚡ Overview
 
 This tool exposes two FastMCP-compatible endpoints:
@@ -21,9 +44,11 @@ Designed for plug-and-play use in modular AI systems or agent runtimes.
 
 - Python 3.12+
 - [`uv`](https://github.com/astral-sh/uv) installed  
-  > _Install via_ `cargo install uv` _or_ `brew install astral-sh/uv/uv`
--Claude Desktop(whcih will be mcp host) to test mcp server
-  > https://claude.ai/download
+  > _Install via_ `curl -LsSf https://astral.sh/uv/install.sh | sh` _or_ `brew install astral-sh/uv/uv`
+  > 
+  > _Windows_ `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+- Claude Desktop
+  > ['Claude Desktop'](https://claude.ai/download) installed
 
 ---
 
