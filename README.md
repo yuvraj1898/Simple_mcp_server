@@ -3,7 +3,7 @@
 A FastMCP-powered microservice that provides search tools for **Wikipedia** and **Arxiv** using the LangChain Community utilities.
 
 ---
-This project demonstrates how to create and run an **MCP (Modular Capability Protocol)** server using [`FastMCP`](https://github.com/anthropics/mcp). It provides simple tools that Claude Desktop can use to **search Wikipedia** and **fetch academic papers from Arxiv**.
+This project demonstrates how to create and run an **MCP (Model Context Protocol)** server using [`FastMCP`](https://github.com/anthropics/mcp). It provides simple tools that Claude Desktop can use to **search Wikipedia** and **fetch academic papers from Arxiv**.
 
 ---
 
